@@ -245,16 +245,26 @@ margin-right: 0;
 
 /*Chefs section*/
 .chefs-title {
-    /* max-width: 520px; */
-    margin: 0 auto 100px;
+    position: relative;
+    margin: 0 auto 80px;
 }
 
-.chefs-title::after,
-.chefs-title::before {
+.chefs-title::before,
+.chefs-title::after {
+    position: absolute;
+    bottom: 24px;
     display: block;
     width: 352px;
     border: 2px solid var(--color-primary-light);
     content: '';
+}
+
+.chefs-title::before { 
+   left: 0;
+}
+
+.chefs-title::after {
+    right: 0;
 }
 
 .chefs-list {
@@ -378,6 +388,35 @@ fill: var(--color-primary-light);
 /*Footer*/
 .footer {
     padding: 32px 0;
+    position: relative;
+    background-color: var(--color-primary-dark);
+    background-image: url(images/footer-background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.footer::before,
+.footer::after {
+    position: absolute;
+    bottom: 0;
+    background-repeat: no-repeat;
+    content: '';
+}
+
+
+.footer::before {
+    width: 180px;
+    height: 120px;
+    left: 0;
+    background-image: url(images/decor-bread-small.png);
+}
+
+.footer::after {
+    width: 380px;
+    height: 190px;
+    right: 0;
+    background-image: url(images/decor-bread-large.png);
 }
 
 .footer-container {
@@ -423,10 +462,34 @@ fill: var(--color-primary-light);
   fill: var(--color-brand-normal);
 }
 
-.footer {
-    background-image: url(images/footer-background.png);
-    background-color: var(--color-primary-dark);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+/* Modal */
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.5 );
+}
+
+.backdrop.is-hidden {
+    display: none;
+}
+
+.modal {
+    position: relative;
+    width: 680px;
+    height: 680px;
+    background-color: var(--color-primary-light);
+    border-radius: 32px;
+}
+
+.modal-btn-close {
+    position: absolute;
+    top: 40px;
+    right: 40px;
 }
