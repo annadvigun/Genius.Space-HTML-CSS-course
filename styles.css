@@ -261,7 +261,7 @@ margin-right: 0;
     bottom: 24px;
     display: block;
     width: 352px;
-    border: 2px solid var(--color-primary-light);
+    border: 2px solid var(--color-brand-dark);
     content: '';
 }
 
@@ -321,16 +321,28 @@ margin-bottom: 24px;
 }
 
 .format-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
     height: 444px;
     padding: 24px;
     background-image: linear-gradient(180deg, rgba(49, 38, 26, 0.00) 55.21%, rgba(49, 38, 26, 0.71) 72.92%, var(--color-primary-dark) 100%);
-    border: 1px solid lightgray; /* remove */
     border-radius: 16px;
     transition: transform 0.3s;
 }
 
 .format-card:hover {
     transform: scale(1.05);
+}
+
+.format-image {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 
 .formats-item{
@@ -344,11 +356,13 @@ margin-bottom: 24px;
 .format-title {
     font-size: 24px;
     font-weight: 600;
+    color: var(--color-primary-light);
 }
 
 .format-text {
     font-size: 14px;
     font-weight: 300;
+    color: var(--color-primary-light);
 }
 
 /* Contact section */
