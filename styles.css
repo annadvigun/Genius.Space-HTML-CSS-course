@@ -312,7 +312,7 @@ margin-bottom: 24px;
 }
 
 /*Formats section*/
-.formats-section-slider {
+.formats-section.slider {
     display: flex;
     align-items: center;
     gap: 32px;
