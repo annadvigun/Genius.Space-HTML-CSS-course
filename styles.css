@@ -316,8 +316,16 @@ margin-bottom: 24px;
     display: flex;
     align-items: center;
     gap: 32px;
-    overflow: hidden;
 }
+
+.formats-container {
+    overflow: hidden;
+    }
+
+.formats-container-list {
+    margin-bottom: 32px;
+}
+
 
 .format-card {
     position: relative;
@@ -403,6 +411,27 @@ fill: var(--color-primary-light);
 .carousel-button.next {
     transform: rotate(180deg);
 }
+
+/* Pagination */
+.pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+} 
+
+.pagination-button {
+    width: 12px;
+    height: 12px;
+    padding: 0;
+    background-color: var(--color-secondary-dark);
+    border-radius: 50%;
+}
+
+.pagination-button-active {
+    background-color: var(--color-brand-normal);
+}
+
 
 
 /*Footer*/

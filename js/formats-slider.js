@@ -8,7 +8,9 @@ const swiper = new Swiper('.swiper-container', {
     },
   },
   pagination: {
-    el: '.swiper-pagination',
+    el: '.pagination',
+    bulletClass: 'pagination-button',
+    bulletActiveClass: 'pagination-button-active',
   },
   navigation: {
     nextEl: '.carousel-button.next',
