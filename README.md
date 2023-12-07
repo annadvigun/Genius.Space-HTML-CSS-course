@@ -23,4 +23,3 @@ Throughout the course, I delved into practical aspects of web development, inclu
 
 **What's Covered**
 This repository contains my hands-on exercises, projects, and code snippets, reflecting my journey through HTML/CSS essentials. 
-
