@@ -22,4 +22,8 @@ Throughout the course, I delved into practical aspects of web development, inclu
 * Leveraging developer tools for debugging and optimization
 
 **What's Covered**
+<<<<<<< HEAD
 This repository contains my hands-on exercises, projects, and code snippets, reflecting my journey through HTML/CSS essentials. 
+=======
+This repository contains my hands-on exercises, projects, and code snippets, reflecting my journey through HTML/CSS essentials. 
+>>>>>>> 8004559dbcfee115f10f1c4817d82a96612b96b8
